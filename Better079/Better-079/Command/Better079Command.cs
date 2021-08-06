@@ -32,7 +32,7 @@ namespace Better079.Command
                     if (arguments.IsEmpty())
                     {
                         string msg;
-                        msg = "\n<color=yellow>El comando es .079 [Numero de habilidad o prefix de habilidad]</color>\n<color=red>Las habilidades que tienes son:</color>\n" +
+                        msg = "\n<color=yellow>The command is .079 [Skill number or skill prefix]</color>\n<color=red>The skills you have are:</color>\n" +
                             $"<color=red>A1 | 1:</color> <color=yellow>Habilidad que recarga por completo tu energia, a nivel tier 5 te permite tener 999 de energia por {Plugin.Instance.Config.Abilitys.A1.OverloadDuration} tiene un cooldown de {Plugin.Instance.Config.Abilitys.A1.OverloadCoolDown} segundos y no usa energia.</color>\n" +
                             $"<color=red>A2 | 2:</color> <color=yellow>Habilidad que te permite envenenar a los enemigos en la sala donde este tu camara actual al tirar el comando, tiene un cooldown de {Plugin.Instance.Config.Abilitys.A2.PoisonCooldown} segundos y usa {Plugin.Instance.Config.Abilitys.A2.PoisonEnergyCost} de energia.</color>\n" +
                             $"<color=red>A3 | 3:</color> <color=yellow>Habilidad que te permite tirar una granada flash en donde este la camara actualmente, tiene un cooldown de {Plugin.Instance.Config.Abilitys.A3.FlashCooldown} segundos y usa {Plugin.Instance.Config.Abilitys.A3.FlashEnergyCost} de energia.</color>\n" +

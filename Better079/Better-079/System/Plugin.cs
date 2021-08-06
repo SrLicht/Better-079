@@ -12,7 +12,6 @@ namespace Better079.System
         private List<Base.Handler> handlers = new List<Base.Handler>();
 
         private static readonly Plugin Singleton = new Plugin();
-
         private Plugin()
         {
         }
@@ -25,6 +24,7 @@ namespace Better079.System
 
         public override string Name => base.Name;
         public override string Author => base.Author;
+        public override Version Version => new Version(1, 0, 1);
 
         public override void OnEnabled()
         {
@@ -65,7 +65,5 @@ namespace Better079.System
             }
             Log.Info("Good bye.");
         }
-
-        public override Version Version => new Version(0, 0, 1);
     }
 }

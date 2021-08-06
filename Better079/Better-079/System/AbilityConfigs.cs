@@ -42,7 +42,8 @@ namespace Better079.System
         public float PoisonCooldown { get; set; } = 45;
         public float PoisonDuration { get; set; } = 15f;
         public float PoisonEnergyCost { get; set; } = 85;
-
+        public Dictionary<Exiled.API.Enums.EffectType, bool> EffectsOfPoison { get; set; } = new Dictionary<Exiled.API.Enums.EffectType, bool> { { Exiled.API.Enums.EffectType.Amnesia, false }, { Exiled.API.Enums.EffectType.Asphyxiated, false }, { Exiled.API.Enums.EffectType.Bleeding, false },
+            {Exiled.API.Enums.EffectType.Blinded, false }, {Exiled.API.Enums.EffectType.Burned, false }, {Exiled.API.Enums.EffectType.Concussed, false }  };
     }
     public class FlashAbilityConfig
     {
@@ -62,6 +63,11 @@ namespace Better079.System
     {
         public float FindCooldown { get; set; } = 10f;
     }
+    public class TranslateAbilityConfig {
+        public string A1Description { get; set; } = "This skill allows you to steal energy from generators and fully charge your energy bar, at Tier 5 this skill evolves and allows you to have infinite energy for {duration}, it has a cooldown of {cooldown} and does not consume energy.";
+        public string A2Description { get; set; } = "";
+    }
+
 
 #pragma warning restore CS1591 // Falta el comentario XML para el tipo o miembro visible públicamente
 }
